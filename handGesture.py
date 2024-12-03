@@ -61,25 +61,6 @@ def preprocess_image(frame):
     return img
 
 
-# percorso = r"train_test\test_data"
-
-# for imm in os.listdir(percorso):
-#     stringa = percorso + "\\" + imm
-#     print(imm)
-#     img = cv2.imread(stringa)
-#     img = preprocess_image(img)
-#     with torch.no_grad():
-#         outputs = model(img)
-#         output = torch.softmax(outputs, dim=1)
-#         preds = torch.argmax(output, 1)
-#         predicted_label = preds.item()
-#         # print(preds)
-#         # print(predicted_label)
-#         print(class_names[predicted_label])
-
-
-
-
 
 # Cattura il video dalla telecamera del PC
 cap = cv2.VideoCapture(0)  # Imposta 0 per la telecamera predefinita
